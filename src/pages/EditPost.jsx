@@ -52,8 +52,8 @@ const EditPost = () => {
         // console.log(data)
         //img upload
         try{
-          const imgUpload=await axios.post(URL+"/api/upload",data)
-          // console.log(imgUpload.data)
+          const imgUpload =await axios.post(URL+"/api/upload",data)
+          console.log(imgUpload.data)
         }
         catch(err){
           console.log(err)
