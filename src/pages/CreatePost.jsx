@@ -6,7 +6,7 @@ import { useContext, useState } from 'react'
 import { UserContext } from '../context/UserContext'
 import { URL } from '../url'
 import axios from 'axios'
-import { Navigate, useNavigate } from 'react-router-dom'
+import {  useNavigate } from 'react-router-dom'
 
 const CreatePost = () => {
    
@@ -51,8 +51,8 @@ const CreatePost = () => {
           // console.log(data)
           //img upload
           try{
-            const imgUpload=await axios.post(URL+"/api/upload",data)
-            // console.log(imgUpload.data)
+            const imgUpload = await axios.post(URL+"/api/upload",data)
+            console.log(imgUpload.data)
           }
           catch(err){
             console.log(err)
